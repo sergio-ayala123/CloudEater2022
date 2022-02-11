@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "+VQzV8AIfpQ8ZnH4CXv6f7SZclVofhzV1pv+i/IoGntoGeOvld7YCSq8G4YtbrnXXy7izps6oy8xVBYAY4+LAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\EaterAPI2022\\EaterAPI2022.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ventu\\.nuget\\packages\\communitytoolkit.common\\8.0.0-preview1\\communitytoolkit.common.8.0.0-preview1.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0-preview1\\communitytoolkit.mvvm.8.0.0-preview1.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\system.net.http.json\\6.0.0\\system.net.http.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\ventu\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,16 @@
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\Views\GamePage.xaml.g.cs
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.AssemblyInfoInputs.cache
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.AssemblyInfo.cs
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.csproj.CoreCompileInputs.cache
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\bin\Debug\netstandard2.0\MobileEater.deps.json
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\bin\Debug\netstandard2.0\MobileEater.dll
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\bin\Debug\netstandard2.0\ref\MobileEater.dll
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\bin\Debug\netstandard2.0\MobileEater.pdb
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.dll
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\ref\MobileEater.dll
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.pdb
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.csproj.AssemblyReference.cache

@@ -1,0 +1,1 @@
+C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\MobileEater.UWP.csproj;x64

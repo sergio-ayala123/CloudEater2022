@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:MobileEater.ViewModels" x:DataType="viewmodels:GameViewModel"
+             x:Class="MobileEater.Views.GamePage">
+   
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Enter Your Name" IsVisible="{Binding Success}" FontSize="Medium" HorizontalOptions="Center"/>
+            <Entry Text="{Binding PlayerName}" IsVisible="{Binding Success}"/>
+            <Label Text="{Binding Result}" FontSize="Large" HorizontalOptions="Center"/>
+
+            <Label Text="Error Connecting to Server Try Again" IsVisible="{Binding Failure}" TextColor="Red" FontSize="Medium" HorizontalTextAlignment="Center"/>
+            <Label Text="Enter Server Address" IsVisible="{Binding Success}" FontSize="Medium" HorizontalOptions="Center"/>
+            <Entry Text="{Binding ServerAddress}" IsVisible="{Binding Success}"/>
+            <Button Command="{Binding JoinGameCommand}" IsVisible="{Binding Success}"/>
+            
+            <Grid HorizontalOptions="Center" VerticalOptions="Center">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+                <ImageButton Source="LEFT.png" Grid.Row="1" Grid.Column="0" Command="{Binding MoveLeftCommand}" IsVisible="{Binding ShowControls}"/>
+                <ImageButton Source="RIGHT.png" Grid.Row="1" Grid.Column="2" Command="{Binding MoveRightCommand}" IsVisible="{Binding ShowControls}"/>
+                <ImageButton Source="UP.png" Grid.Row="0" Grid.Column="1" Command="{Binding MoveUpCommand}" IsVisible="{Binding ShowControls}"/>
+                <ImageButton Source="DOWN.png" Grid.Row="2" Grid.Column="1" Command="{Binding MoveDownCommand}" IsVisible="{Binding ShowControls}"/>
+
+            </Grid>
+            <Label Text="Total Eaten Pills" IsVisible="{Binding ShowControls}" HorizontalOptions="Center"/>
+            <Label Text="{Binding EatenPills}" FontSize="Small" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
