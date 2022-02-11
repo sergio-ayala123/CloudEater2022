@@ -23,7 +23,7 @@ jobs:
           include-prerelease: true
 
       - name: Build with dotnet
-        run: dotnet build --project EaterAPI2022
+        run: dotnet build EaterAPI2022 --configuration Release
 
       - name: dotnet publish
         run: dotnet publish EaterAPI2022 -c Release -o ${{env.DOTNET_ROOT}}/myapp
