@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2wm4Rhr4xLj7wiEiI4NmndSa6nDRgNNuwixKRMkuOGaB2ohNthkNqaFpWMfDJeMEH6Lhv3sHQ6hI4nNS0YKC2g==",
+  "dgSpecHash": "znG8Heg2Tcr1JsL+AlktS6W7HgQjNkHHEwMFXV1udY5WeycxGQP6OuJ87rZC1Wt7b7GVjOlsUcL7eqlVSe9fBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater.iOS\\MobileEater.iOS.csproj",
+  "projectFilePath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater.iOS\\MobileEater.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ventu\\.nuget\\packages\\communitytoolkit.common\\8.0.0-preview1\\communitytoolkit.common.8.0.0-preview1.nupkg.sha512",
     "C:\\Users\\ventu\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0-preview1\\communitytoolkit.mvvm.8.0.0-preview1.nupkg.sha512",

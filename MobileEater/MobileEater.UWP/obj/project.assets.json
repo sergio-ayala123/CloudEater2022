@@ -10699,11 +10699,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater.UWP\\MobileEater.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater.UWP\\MobileEater.UWP.csproj",
       "projectName": "MobileEater.UWP",
-      "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater.UWP\\MobileEater.UWP.csproj",
+      "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater.UWP\\MobileEater.UWP.csproj",
       "packagesPath": "C:\\Users\\ventu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater.UWP\\obj\\",
+      "outputPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10727,8 +10727,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater\\MobileEater.csproj": {
-              "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater\\MobileEater.csproj"
+            "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater\\MobileEater.csproj": {
+              "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater\\MobileEater.csproj"
             }
           }
         }

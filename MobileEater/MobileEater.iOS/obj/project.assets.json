@@ -1917,11 +1917,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater.iOS\\MobileEater.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater.iOS\\MobileEater.iOS.csproj",
       "projectName": "MobileEater.iOS",
-      "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater.iOS\\MobileEater.iOS.csproj",
+      "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater.iOS\\MobileEater.iOS.csproj",
       "packagesPath": "C:\\Users\\ventu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater.iOS\\obj\\",
+      "outputPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1944,8 +1944,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater\\MobileEater.csproj": {
-              "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater\\MobileEater.csproj"
+            "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater\\MobileEater.csproj": {
+              "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater\\MobileEater.csproj"
             }
           }
         }

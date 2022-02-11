@@ -3699,11 +3699,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater.Android\\MobileEater.Android.csproj",
+      "projectUniqueName": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater.Android\\MobileEater.Android.csproj",
       "projectName": "MobileEater.Android",
-      "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater.Android\\MobileEater.Android.csproj",
+      "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater.Android\\MobileEater.Android.csproj",
       "packagesPath": "C:\\Users\\ventu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater.Android\\obj\\",
+      "outputPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3726,8 +3726,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater\\MobileEater.csproj": {
-              "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater\\MobileEater.csproj"
+            "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater\\MobileEater.csproj": {
+              "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater\\MobileEater.csproj"
             }
           }
         }

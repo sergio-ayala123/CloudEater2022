@@ -5281,11 +5281,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\EaterTests\\EaterTests.csproj",
+      "projectUniqueName": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\EaterTests\\EaterTests.csproj",
       "projectName": "EaterTests",
-      "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\EaterTests\\EaterTests.csproj",
+      "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\EaterTests\\EaterTests.csproj",
       "packagesPath": "C:\\Users\\ventu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\EaterTests\\obj\\",
+      "outputPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\EaterTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5308,8 +5308,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater\\MobileEater.csproj": {
-              "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\homework-sergio-ayala123\\Eater2022\\MobileEater\\MobileEater\\MobileEater.csproj"
+            "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater\\MobileEater.csproj": {
+              "projectPath": "C:\\Users\\ventu\\Documents\\GitHub\\CloudEater2022\\MobileEater\\MobileEater\\MobileEater.csproj"
             }
           }
         }
