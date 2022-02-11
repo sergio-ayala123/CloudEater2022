@@ -17,7 +17,7 @@ namespace MobileEater.Services
     public class JoinGameService : IGameService
     {
         private readonly HttpClient httpClient = new HttpClient();
-        private const string ServerUrl = "http://20.106.99.13";
+        private const string ServerUrl = "https://cloudeater2022.azurewebsites.net/";
         public async Task<IEnumerable<Player>> GetScore()
         {
 

@@ -13,7 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileEater", "MobileEater\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EaterAPI2022", "EaterAPI2022\EaterAPI2022.csproj", "{3778E108-9E5A-4F29-8382-7A400EFCFD5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EaterTests", "EaterTests\EaterTests.csproj", "{04A6C4E9-5771-402F-972E-EBF7B76C2DD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EaterTests", "EaterTests\EaterTests.csproj", "{04A6C4E9-5771-402F-972E-EBF7B76C2DD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7CE14728-CEB4-4AAA-BE88-FBFDDF33AEC7}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\main_cloudeater2022.yml = .github\workflows\main_cloudeater2022.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
