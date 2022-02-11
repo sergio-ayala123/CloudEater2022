@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7ce14728-ceb4-4aaa-be88-fbfddf33aec7": {
+      "ProjectGuid": "7ce14728-ceb4-4aaa-be88-fbfddf33aec7",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 0
+    },
+    "30b21640-3576-4f3b-a35a-32ff3bd8a182": {
+      "ProjectGuid": "30b21640-3576-4f3b-a35a-32ff3bd8a182",
+      "DisplayName": "MobileEater",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

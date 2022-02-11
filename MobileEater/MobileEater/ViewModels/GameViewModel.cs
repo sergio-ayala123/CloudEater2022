@@ -44,19 +44,11 @@ namespace MobileEater.ViewModels
         [ICommand]
         public async Task JoinGame()
         {
-            if (ServerAddress != "https://hungrygame.azurewebsites.net/")
-            {
-                Failure = true;
-                ServerAddress = string.Empty;
-            }
-            else
-            {
+            
                 Result = await gameService.JoinGame(PlayerName) + $" As: {PlayerName}";
-                Failure = false;
                 ShowControls = true; 
-                Success = false;
                 Players.Add(new Player { Id = 1, Name = PlayerName, Score = 0 });
-            }
+            
         }
         public ObservableCollection<object> Players{ get; private set; } = new();
 
