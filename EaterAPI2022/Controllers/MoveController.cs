@@ -21,7 +21,7 @@ namespace EaterAPI2022.Controllers
         public async Task<int> Move(string direction, string password)
         {
             
-            if(password != "secretpassword")
+            if(password != state.password)
             {
                 return state.EatenPills;
             }

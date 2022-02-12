@@ -10,24 +10,18 @@ namespace MobileEater.Services
     public interface IGameService
     {
 
-        Task<string> JoinGame(string playerName);
+        Task<string> JoinGame(string playerName, string password);
         Task<string> Move(string direction, string password);
-        Task<IEnumerable<Player>> GetScore();
     }
     public class JoinGameService : IGameService
     {
         private readonly HttpClient httpClient = new HttpClient();
         private const string ServerUrl = "https://cloudeater2022.azurewebsites.net/";
-        public async Task<IEnumerable<Player>> GetScore()
+        
+
+        public async Task<string> JoinGame(string name, string password)
         {
-
-            return await httpClient.GetFromJsonAsync<IEnumerable<Player>>("http://localhost:5080/GetScore");
-
-        }
-
-        public async Task<string> JoinGame(string name)
-        {
-            return await httpClient.GetStringAsync($"{ServerUrl}/JoinGame?playerName={name}");
+            return await httpClient.GetStringAsync($"{ServerUrl}/JoinGame?playerName={name}&&password={password}");
 
         }
 

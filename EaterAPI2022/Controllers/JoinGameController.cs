@@ -15,9 +15,9 @@ namespace EaterAPI2022.Controllers
         }
 
         [HttpGet(Name = "JoinGame")]
-        public async Task<string> Get(string playerName)
+        public async Task<string> Get(string playerName, string password)
         {
-            
+            state.password = password;
             state.Token = await httpClient.GetStringAsync($"https://hungrygame.azurewebsites.net/join?playerName={playerName}");
             return "Joined Successfully";
             

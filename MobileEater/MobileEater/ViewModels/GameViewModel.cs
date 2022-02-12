@@ -22,7 +22,7 @@ namespace MobileEater.ViewModels
         }
 
         [ObservableProperty]
-        public bool success = true;
+        public bool showLabels = true;
 
         [ObservableProperty]
         public bool failure = false;
@@ -33,7 +33,7 @@ namespace MobileEater.ViewModels
         public string result;
 
         [ObservableProperty]
-        public string serverAddress;
+        public string secretPassword;
 
         [ObservableProperty]
         public bool showControls = false;
@@ -44,10 +44,18 @@ namespace MobileEater.ViewModels
         [ICommand]
         public async Task JoinGame()
         {
-            
-                Result = await gameService.JoinGame(PlayerName) + $" As: {PlayerName}";
-                ShowControls = true; 
+            if(SecretPassword!= "secretpassword")
+            {
+                Failure = true;
+            }
+            else
+            {
+                Result = await gameService.JoinGame(PlayerName, SecretPassword) + $" As: {PlayerName}";
+                ShowControls = true;
+                Failure = false;
+                ShowLabels = false;
                 Players.Add(new Player { Id = 1, Name = PlayerName, Score = 0 });
+            }
             
         }
         public ObservableCollection<object> Players{ get; private set; } = new();

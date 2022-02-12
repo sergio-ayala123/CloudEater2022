@@ -10,22 +10,22 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=F403FA09-F678-4591-B21C-00D65C1C2C70</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\MobileEater.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\MobileEater.UWP.exe">
       <PackagePath>entrypoint\MobileEater.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ventu\.nuget\packages\communitytoolkit.common\8.0.0-preview1\lib\netstandard2.0\CommunityToolkit.Common.dll">
@@ -70,7 +70,7 @@
     <AppxPackagedFile Include="C:\Users\ventu\.nuget\packages\xamarin.forms\5.0.0.2196\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater\bin\Debug\netstandard2.0\MobileEater.dll">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\bin\Debug\netstandard2.0\MobileEater.dll">
       <PackagePath>MobileEater.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ventu\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
@@ -82,145 +82,145 @@
     <AppxPackagedFile Include="C:\Users\ventu\.nuget\packages\xamarin.forms\5.0.0.2196\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\DOWN.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\DOWN.png">
       <PackagePath>DOWN.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\LEFT.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\LEFT.png">
       <PackagePath>LEFT.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\RIGHT.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\RIGHT.png">
       <PackagePath>RIGHT.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\UP.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\UP.png">
       <PackagePath>UP.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\xamarin_logo.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\xamarin_logo.png">
       <PackagePath>xamarin_logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\icon_about.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\icon_about.png">
       <PackagePath>icon_about.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\icon_feed.png">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\icon_feed.png">
       <PackagePath>icon_feed.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\MobileEater.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\MobileEater.UWP.xr.xml">
       <PackagePath>MobileEater.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
@@ -232,10 +232,10 @@
     <AppxPackagedFile Include="C:\Users\ventu\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\homework-sergio-ayala123\Eater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\Core\MobileEater.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\Core\MobileEater.UWP.exe">
       <PackagePath>MobileEater.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

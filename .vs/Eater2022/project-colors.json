@@ -10,7 +10,12 @@
       "ProjectGuid": "30b21640-3576-4f3b-a35a-32ff3bd8a182",
       "DisplayName": "MobileEater",
       "ColorIndex": 1
+    },
+    "3778e108-9e5a-4f29-8382-7a400efcfd5a": {
+      "ProjectGuid": "3778e108-9e5a-4f29-8382-7a400efcfd5a",
+      "DisplayName": "EaterAPI2022",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
