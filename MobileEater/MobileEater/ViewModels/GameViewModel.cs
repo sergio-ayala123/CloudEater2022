@@ -18,7 +18,7 @@ namespace MobileEater.ViewModels
 
         public GameViewModel(IGameService gameService = null)
         {
-            this.gameService = gameService ?? DependencyService.Get<IGameService>(); ;
+            this.gameService = gameService ?? DependencyService.Get<IGameService>(); 
         }
 
         [ObservableProperty]

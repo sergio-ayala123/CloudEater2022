@@ -145,3 +145,6 @@ C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\obj\x
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\obj\x64\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160715180000000.json
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637425067200000000.json
+C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\obj\x64\Debug\FxResources.System.Net.Http.Json.SR.resw
+C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\obj\x64\Debug\FxResources.System.Text.Encodings.Web.SR.resw
+C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\obj\x64\Debug\FxResources.System.Text.Json.SR.resw

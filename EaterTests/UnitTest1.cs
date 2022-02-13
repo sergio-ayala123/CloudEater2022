@@ -19,11 +19,10 @@ namespace EaterTests
         public async Task TestSuccessfulRegistration()
         {
             var mock = new Mock<IGameService>();
-            mock.Setup(m => m.JoinGame("player")).ReturnsAsync(new string("token"));
+            mock.Setup(m => m.JoinGame("player", "password")).ReturnsAsync(new string("token"));
 
             var gvm = new GameViewModel(mock.Object);
 
-            gvm.ServerAddress = "https://hungrygame.azurewebsites.net/";
             //gvm.PlayerName = "player";
 
             await gvm.JoinGameCommand.ExecuteAsync(this);
@@ -35,11 +34,10 @@ namespace EaterTests
         public async Task TestFailedRegistrationWrongServerAddress()
         {
             var mock = new Mock<IGameService>();
-            mock.Setup(m => m.JoinGame("player")).ReturnsAsync(new string("token"));
+            mock.Setup(m => m.JoinGame("player", "password")).ReturnsAsync(new string("token"));
 
             var gvm = new GameViewModel(mock.Object);
 
-            gvm.ServerAddress = "https://hungry.azurewebsites.net/";
             //gvm.PlayerName = "player";
 
             await gvm.JoinGameCommand.ExecuteAsync(this);

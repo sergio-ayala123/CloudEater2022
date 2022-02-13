@@ -12,6 +12,7 @@ namespace MobileEater.Services
 
         Task<string> JoinGame(string playerName, string password);
         Task<string> Move(string direction, string password);
+        Task<IEnumerable<Board>> GetBoard();
     }
     public class JoinGameService : IGameService
     {
@@ -29,5 +30,18 @@ namespace MobileEater.Services
         {
             return await httpClient.GetStringAsync($"{ServerUrl}/Move?direction={direction}&&password={password}");
         }
+
+
+        public async Task<IEnumerable<Board>> GetBoard()
+        {
+            return await httpClient.GetFromJsonAsync<IEnumerable<Board>>("https://hungrygame.azurewebsites.net/board");
+        }
+
+    }
+    public class Player
+    {
+        public string Name { get; set; }
+        public int Id { get; set; }
+        public int Score { get; set; }
     }
 }

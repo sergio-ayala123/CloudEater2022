@@ -15,7 +15,12 @@
       "ProjectGuid": "3778e108-9e5a-4f29-8382-7a400efcfd5a",
       "DisplayName": "EaterAPI2022",
       "ColorIndex": 2
+    },
+    "04a6c4e9-5771-402f-972e-ebf7b76c2dd0": {
+      "ProjectGuid": "04a6c4e9-5771-402f-972e-ebf7b76c2dd0",
+      "DisplayName": "EaterTests",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

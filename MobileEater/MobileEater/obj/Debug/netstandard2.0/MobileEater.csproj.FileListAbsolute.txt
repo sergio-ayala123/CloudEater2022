@@ -18,7 +18,6 @@ C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\bin\Debug
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\bin\Debug\netstandard2.0\MobileEater.dll
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\bin\Debug\netstandard2.0\ref\MobileEater.dll
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\bin\Debug\netstandard2.0\MobileEater.pdb
-C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.csproj.AssemblyReference.cache
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
@@ -30,3 +29,4 @@ C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.dll
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\ref\MobileEater.dll
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.pdb
+C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\Views\BotPage.xaml.g.cs
