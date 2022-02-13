@@ -29,7 +29,7 @@ namespace MobileEater.ViewModels
         [ObservableProperty]
         public string labelText;
         [ObservableProperty]
-        public int score;
+        public string score;
         [ObservableProperty]
         public string error;
 
@@ -43,9 +43,9 @@ namespace MobileEater.ViewModels
             Error = string.Empty;
             await gameService.JoinGame(BotName, "secretpassword");
 
-            await gameService.MoveBot(BotName, "secretpassword");
-              
-            
+            var result = await gameService.MoveBot(BotName, "secretpassword");
+
+            Score = ("Final Score is: " + result.occupiedBy.score);
         }
     }
               

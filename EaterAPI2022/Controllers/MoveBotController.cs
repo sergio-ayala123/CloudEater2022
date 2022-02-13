@@ -37,6 +37,7 @@ namespace EaterAPI2022.Controllers
 
                 if (current == null)
                 {
+                    return current;
                     break;
                 }
                 else
