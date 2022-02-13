@@ -31,7 +31,7 @@ namespace MobileEater.ViewModels
         [ObservableProperty]
         public int score;
         [ObservableProperty]
-        public int moves;
+        public string error;
 
         public int position { get; set; }
         public bool flag = false;
@@ -45,10 +45,19 @@ namespace MobileEater.ViewModels
             for(int i = 0; i < 1000; i++)
             {
 
-            var result = await gameService.MoveBot(BotName,"secretpassword");
-            Score = result.occupiedBy.score;
+                var result = await gameService.MoveBot(BotName,"secretpassword");
+
+                if(result.occupiedBy == null)
+                {
+                    break;
+                }
+                else
+                {
+                    Score = result.occupiedBy.score;
+                }
             
             }
+                    Error = "error encountered";
 
             
 

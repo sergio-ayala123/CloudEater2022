@@ -12,8 +12,7 @@
 
             <Label Text="Score" FontSize="Large" HorizontalOptions="Center"/>
             <Label Text="{Binding Score}" FontSize="Medium" HorizontalOptions="Center"/>
-            <Label Text="Number of Moves: " FontSize="Large" HorizontalOptions="Center"/>
-            <Label Text="{Binding Moves}" FontSize="Medium" HorizontalOptions="Center"/>
+            <Label Text="{Binding Error}" FontSize="Large" HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

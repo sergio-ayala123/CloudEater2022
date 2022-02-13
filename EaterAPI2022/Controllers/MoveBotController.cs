@@ -34,33 +34,33 @@ namespace EaterAPI2022.Controllers
                 return new Board();
             }
             else { 
-            Board down = list.Where(x => x.location.column == current.location.column && x.location.row == current.location.row + 1).FirstOrDefault();
-            Board up = list.Where(x => x.location.column == current.location.column && x.location.row == current.location.row - 1).FirstOrDefault();
-            Board left = list.Where(x => x.location.column == current.location.column - 1 && x.location.row == current.location.row).FirstOrDefault();
-            Board right = list.Where(x => x.location.column == current.location.column + 1 && x.location.row == current.location.row).FirstOrDefault();
+            Board down = list.FirstOrDefault(x => x.location.column == current.location.column && x.location.row == current.location.row + 1);
+            Board up = list.FirstOrDefault(x => x.location.column == current.location.column && x.location.row == current.location.row - 1);
+            Board left = list.FirstOrDefault(x => x.location.column == current.location.column - 1 && x.location.row == current.location.row);
+            Board right = list.FirstOrDefault(x => x.location.column == current.location.column + 1 && x.location.row == current.location.row);
 
-            if (up != null & up.isPillAvailable == true & (up.location.row > 0 & up.location.row < 29) & (up.location.column > 0 & up.location.column < 45))
+            if (up != null & up.isPillAvailable == true)
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/up/?token={state.Token}");
                 list = null;
 
                 return current;
             }
-            else if (down != null & down.isPillAvailable == true & (down.location.row > 0 & down.location.row < 29) & (down.location.column > 0 & down.location.column < 45))
+            else if (down != null & down.isPillAvailable == true)
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/down/?token={state.Token}");
                 list = null;
 
                 return current;
             }
-            else if (left != null & left.isPillAvailable == true & (left.location.row > 0 & left.location.row < 29) & (left.location.column > 0 & left.location.column < 45))
+            else if (left != null & left.isPillAvailable == true)
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/left/?token={state.Token}");
                 list = null;
 
                 return current;
             }
-            else if (right != null & right.isPillAvailable == true & (right.location.row > 0 & right.location.row < 29) & (right.location.column > 0 & right.location.column < 45))
+            else if (right != null & right.isPillAvailable == true)
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
                 list = null;
@@ -71,7 +71,8 @@ namespace EaterAPI2022.Controllers
 
 
             list = null;
-            //Score = current.occupiedBy.score;
+                //Score = current.occupiedBy.score;
+                //&(right.location.row > 0 & right.location.row < 29) & (right.location.column > 0 & right.location.column < 45)
             return new Board();
 
 
