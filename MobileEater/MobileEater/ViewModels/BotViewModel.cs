@@ -40,30 +40,13 @@ namespace MobileEater.ViewModels
         [ICommand]
         public async Task JoinGameAsBot()
         {
+            Error = string.Empty;
             await gameService.JoinGame(BotName, "secretpassword");
 
-            for(int i = 0; i < 1000; i++)
-            {
-
-                var result = await gameService.MoveBot(BotName,"secretpassword");
-
-                if(result.occupiedBy == null)
-                {
-                    break;
-                }
-                else
-                {
-                    Score = result.occupiedBy.score;
-                }
             
-            }
-                    Error = "error encountered";
-
+              
             
-
         }
-
-
     }
               
     }
