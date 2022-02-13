@@ -20,6 +20,11 @@
       "ProjectGuid": "04a6c4e9-5771-402f-972e-ebf7b76c2dd0",
       "DisplayName": "EaterTests",
       "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 4

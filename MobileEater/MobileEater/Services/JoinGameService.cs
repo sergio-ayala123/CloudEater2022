@@ -12,6 +12,7 @@ namespace MobileEater.Services
 
         Task<string> JoinGame(string playerName, string password);
         Task<string> Move(string direction, string password);
+        Task<MoveResult> MoveBot(string direction);
         Task<IEnumerable<Board>> GetBoard();
     }
     public class JoinGameService : IGameService
@@ -38,6 +39,10 @@ namespace MobileEater.Services
            
         }
 
+        public Task<MoveResult> MoveBot(string direction)
+        {
+            return httpClient.GetFromJsonAsync<MoveResult>($"{ServerUrl}/MoveBot?direction={direction}");
+        }
     }
     public class Player
     {

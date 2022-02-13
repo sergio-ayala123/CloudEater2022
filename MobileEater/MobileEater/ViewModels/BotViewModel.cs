@@ -46,15 +46,13 @@ namespace MobileEater.ViewModels
             IList<Board> list = positions.ToList();
 
 
-            //position = list[0].occupiedBy.score;
-                
-
+            
 
             for (int x = 0; x < 10; x++)
             {
-                await gameService.Move("left", "secretpassword");
-                await gameService.Move("up", "secretpassword");
-                await gameService.Move("left", "secretpassword");
+                await gameService.MoveBot("left");
+                await gameService.MoveBot("up");
+                await gameService.MoveBot("left");
             }
             return "moving";
         }
