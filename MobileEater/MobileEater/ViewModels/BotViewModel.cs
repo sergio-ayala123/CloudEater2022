@@ -42,8 +42,11 @@ namespace MobileEater.ViewModels
         {
             await gameService.JoinGame(BotName, "secretpassword");
 
-            
+            for(int i = 0; i < 20; i++)
+            {
+
             await gameService.MoveBot(BotName,"secretpassword");
+            }
 
             
 
