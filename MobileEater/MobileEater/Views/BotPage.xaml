@@ -7,9 +7,13 @@
             <Label Text="Enter Bot Name" HorizontalOptions="Center"/>
             <Entry Text="{Binding BotName}"/>
 
-            <Label Text="{Binding LabelText}" FontSize="Large" HorizontalOptions="Center"/>
 
-            <Button Command="{Binding JoinGameAsBotCommand}" HorizontalOptions="Center"/>
+            <Button Text="Join Game" Command="{Binding JoinGameAsBotCommand}" HorizontalOptions="Center"/>
+
+            <Label Text="Score" FontSize="Large" HorizontalOptions="Center"/>
+            <Label Text="{Binding Score}" FontSize="Medium" HorizontalOptions="Center"/>
+            <Label Text="Number of Moves: " FontSize="Large" HorizontalOptions="Center"/>
+            <Label Text="{Binding Moves}" FontSize="Medium" HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

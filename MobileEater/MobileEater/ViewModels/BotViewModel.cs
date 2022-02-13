@@ -12,13 +12,13 @@ using Xamarin.Forms;
 
 namespace MobileEater.ViewModels
 {
-    public partial class BotViewModel:ObservableObject
+    public partial class BotViewModel : ObservableObject
     {
         private readonly IGameService gameService;
 
         public BotViewModel(IGameService gameService = null)
         {
-            this.gameService = gameService??DependencyService.Get<IGameService>();
+            this.gameService = gameService ?? DependencyService.Get<IGameService>();
         }
 
         [ObservableProperty]
@@ -28,34 +28,35 @@ namespace MobileEater.ViewModels
         public string botPassword;
         [ObservableProperty]
         public string labelText;
+        [ObservableProperty]
+        public int score;
+        [ObservableProperty]
+        public int moves;
+
         public int position { get; set; }
-        public IEnumerable<Board> positions { get; set; }
+        public bool flag = false;
+
 
         [ICommand]
         public async Task JoinGameAsBot()
         {
+            await gameService.JoinGame(BotName, "secretpassword");
 
             
-                await gameService.JoinGame(BotName, "secretpassword");
-
-                LabelText = await BotMovement(BotName, "secretpassword");
-        }
-        public async Task<string> BotMovement(string botname, string password)
-        {
-            positions = await gameService.GetBoard();
-            IList<Board> list = positions.ToList();
-
+            await gameService.MoveBot(BotName, "secretpassword");
 
             
 
-            for (int x = 0; x < 10; x++)
-            {
-                await gameService.MoveBot("left");
-                await gameService.MoveBot("up");
-                await gameService.MoveBot("left");
-            }
-            return "moving";
         }
+
 
     }
-}
+              
+    }
+             
+           
+            
+         
+
+    
+
