@@ -8,7 +8,7 @@ namespace MobileEater.Models
     {
         public Location location { get; set; }
         public bool isPillAvailable { get; set; }
-        public string? occupiedBy { get; set; }
+        public Player occupiedBy { get; set; }
     }
 
     public class Location

@@ -37,8 +37,8 @@ namespace MobileEater.ViewModels
             else
             {
                 await gameService.JoinGame(BotName, BotPassword);
-
-                foreach(var item in await gameService.GetBoard())
+                IEnumerable<Board> result = await gameService.GetBoard();
+                foreach(var item in result)
                 {
                     positions.Add(item);
                 }
