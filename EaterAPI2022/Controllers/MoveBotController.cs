@@ -23,7 +23,7 @@ namespace EaterAPI2022.Controllers
         {
 
             Board finalPosition  = new Board();
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 1350; i++)
             {
             MoveResult botmove = new MoveResult();
                 //var result = await gameService.MoveBot(BotName, "secretpassword");
