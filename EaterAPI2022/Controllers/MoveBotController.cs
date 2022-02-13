@@ -19,7 +19,7 @@ namespace EaterAPI2022.Controllers
         }
 
         [HttpGet(Name ="MoveBot")]
-        public async Task<MoveResult> MoveBot(string botName, string password)
+        public async Task<Board> MoveBot(string botName, string password)
         {
             MoveResult botmove; 
 
@@ -37,26 +37,26 @@ namespace EaterAPI2022.Controllers
             if (up.isPillAvailable == true & (up.location.row > 0 & up.location.row < 29) & (up.location.column > 0 & up.location.column < 45))
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/up/?token={state.Token}");
-                return botmove;
+                return current;
             }
             else if (down.isPillAvailable == true & (down.location.row > 0 & down.location.row < 29) & (down.location.column > 0 & down.location.column < 45))
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/down/?token={state.Token}");
-                return botmove;
+                return current;
             }
             else if (left.isPillAvailable == true & (left.location.row > 0 & left.location.row < 29) & (left.location.column > 0 & left.location.column < 45))
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/left/?token={state.Token}");
-                return botmove;
+                return current;
             }
             else if (right.isPillAvailable == true & (right.location.row > 0 & right.location.row < 29) & (right.location.column > 0 & right.location.column < 45))
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
-                return botmove;
+                return current;
             }
 
             //Score = current.occupiedBy.score;
-            return new MoveResult();
+            return new Board();
             
 
 
