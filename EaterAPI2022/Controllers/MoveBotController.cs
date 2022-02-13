@@ -22,7 +22,7 @@ namespace EaterAPI2022.Controllers
         public async Task<Board> MoveBot(string botName, string password)
         {
 
-
+            Board finalPosition  = new Board();
             for (int i = 0; i < 1000; i++)
             {
             MoveResult botmove = new MoveResult();
@@ -51,28 +51,28 @@ namespace EaterAPI2022.Controllers
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/up/?token={state.Token}");
                         list = null;
 
-                        return current;
+                        //return current;
                     }
                     else if (down != null && down.isPillAvailable == true)
                     {
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/down/?token={state.Token}");
                         list = null;
 
-                        return current;
+                        //return current;
                     }
                     else if (left != null && left.isPillAvailable == true)
                     {
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/left/?token={state.Token}");
                         list = null;
 
-                        return current;
+                        //return current;
                     }
                     else if (right != null && right.isPillAvailable == true)
                     {
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
                         list = null;
 
-                        return current;
+                        //return current;
                     }
 
 
@@ -82,9 +82,9 @@ namespace EaterAPI2022.Controllers
                     //&(right.location.row > 0 & right.location.row < 29) & (right.location.column > 0 & right.location.column < 45)
 
                 }
-
+                finalPosition = current;
             }
-                    return new Board();
+            return finalPosition;
                 
 
         }
