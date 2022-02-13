@@ -7,8 +7,7 @@
             <Label Text="Enter Bot Name" HorizontalOptions="Center"/>
             <Entry Text="{Binding BotName}"/>
 
-            <Label Text="Enter Password" HorizontalOptions="Center"/>
-            <Entry Text="{Binding BotPassword}"/>
+            <Label Text="{Binding LabelText}" FontSize="Large" HorizontalOptions="Center"/>
 
             <Button Command="{Binding JoinGameAsBotCommand}" HorizontalOptions="Center"/>
         </StackLayout>

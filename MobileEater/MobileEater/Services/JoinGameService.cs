@@ -32,10 +32,10 @@ namespace MobileEater.Services
         }
 
 
-        public async Task<IEnumerable<Board>> GetBoard()
+        public Task<IEnumerable<Board>> GetBoard()
         {
-            IEnumerable<Board> result = await httpClient.GetFromJsonAsync<IEnumerable<Board>>("https://hungrygame.azurewebsites.net/board");
-            return result;
+             return httpClient.GetFromJsonAsync<IEnumerable<Board>>("https://hungrygame.azurewebsites.net/board");
+           
         }
 
     }

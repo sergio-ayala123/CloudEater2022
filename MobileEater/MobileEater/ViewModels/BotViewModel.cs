@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using MobileEater.Models;
 using MobileEater.Services;
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
@@ -25,34 +26,35 @@ namespace MobileEater.ViewModels
 
         [ObservableProperty]
         public string botPassword;
-        public IList<Board> positions { get; set; }
+        [ObservableProperty]
+        public string labelText;
+        public IEnumerable<Board> positions { get; set; }
 
         [ICommand]
         public async Task JoinGameAsBot()
         {
-            if (botPassword != "secretpassword")
-            {
 
-            }
-            else
-            {
-                await gameService.JoinGame(BotName, BotPassword);
-                IEnumerable<Board> result = await gameService.GetBoard();
-                foreach(var item in result)
-                {
-                    positions.Add(item);
-                }
-                await BotMovement(BotName, BotPassword);
-            }
+            
+                await gameService.JoinGame(BotName, "secretpassword");
+
+                LabelText = await BotMovement(BotName, "secretpassword");
         }
-        public async Task BotMovement(string botname, string password)
+        public async Task<string> BotMovement(string botname, string password)
         {
-            for(int x = 0; x < 10; x++)
+            positions = await gameService.GetBoard();
+            IList<Board> list = positions.ToList();
+
+            foreach (var item in list)
+            {
+                list.Add(item);
+            }
+            for (int x = 0; x < 10; x++)
             {
                 await gameService.Move("left", "secretpassword");
                 await gameService.Move("up", "secretpassword");
                 await gameService.Move("left", "secretpassword");
             }
+            return "moving";
         }
 
     }
