@@ -28,6 +28,7 @@ namespace MobileEater.ViewModels
         public string botPassword;
         [ObservableProperty]
         public string labelText;
+        public int position { get; set; }
         public IEnumerable<Board> positions { get; set; }
 
         [ICommand]
@@ -44,10 +45,11 @@ namespace MobileEater.ViewModels
             positions = await gameService.GetBoard();
             IList<Board> list = positions.ToList();
 
-            foreach (var item in list)
-            {
-                list.Add(item);
-            }
+
+            //position = list[0].occupiedBy.score;
+                
+
+
             for (int x = 0; x < 10; x++)
             {
                 await gameService.Move("left", "secretpassword");
