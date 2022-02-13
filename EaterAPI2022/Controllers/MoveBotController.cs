@@ -23,9 +23,9 @@ namespace EaterAPI2022.Controllers
         {
 
 
-            MoveResult botmove = new MoveResult();
             for (int i = 0; i < 1000; i++)
             {
+            MoveResult botmove = new MoveResult();
                 //var result = await gameService.MoveBot(BotName, "secretpassword");
 
 
@@ -33,7 +33,7 @@ namespace EaterAPI2022.Controllers
                 list = positions.ToList();
 
 
-                Board current = list.Where(x => x.occupiedBy != null && x.occupiedBy.name == botName).FirstOrDefault();
+                Board current = list.FirstOrDefault(x => x.occupiedBy != null && x.occupiedBy.name == botName);
 
                 if (current == null)
                 {

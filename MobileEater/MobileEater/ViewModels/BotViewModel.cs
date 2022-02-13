@@ -43,7 +43,7 @@ namespace MobileEater.ViewModels
             Error = string.Empty;
             await gameService.JoinGame(BotName, "secretpassword");
 
-            
+            await gameService.MoveBot(BotName, "secretpassword");
               
             
         }
