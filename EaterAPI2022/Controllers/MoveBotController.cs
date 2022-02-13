@@ -21,7 +21,7 @@ namespace EaterAPI2022.Controllers
         [HttpGet(Name ="MoveBot")]
         public async Task<Board> MoveBot(string botName, string password)
         {
-            MoveResult botmove; 
+            MoveResult botmove = new MoveResult(); 
 
             positions = await httpClient.GetFromJsonAsync<IEnumerable<Board>>("https://hungrygame.azurewebsites.net/board");
             list = positions.ToList();
@@ -34,31 +34,27 @@ namespace EaterAPI2022.Controllers
             Board left = list.Where(x => x.location.column == current.location.column - 1 && x.location.row == current.location.row).FirstOrDefault();
             Board right = list.Where(x => x.location.column == current.location.column + 1 && x.location.row == current.location.row).FirstOrDefault();
 
-            if (up.isPillAvailable == true & (up.location.row > 0 & up.location.row < 29) & (up.location.column > 0 & up.location.column < 45))
+            if (up!= null && up.isPillAvailable == true & (up.location.row > 0 & up.location.row < 29) & (up.location.column > 0 & up.location.column < 45))
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/up/?token={state.Token}");
-                list = null;
 
                 return current;
             }
-            else if (down.isPillAvailable == true & (down.location.row > 0 & down.location.row < 29) & (down.location.column > 0 & down.location.column < 45))
+            else if (down!= null && down.isPillAvailable == true & (down.location.row > 0 & down.location.row < 29) & (down.location.column > 0 & down.location.column < 45))
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/down/?token={state.Token}");
-                list = null;
 
                 return current;
             }
-            else if (left.isPillAvailable == true & (left.location.row > 0 & left.location.row < 29) & (left.location.column > 0 & left.location.column < 45))
+            else if (left!=null && left.isPillAvailable == true & (left.location.row > 0 & left.location.row < 29) & (left.location.column > 0 & left.location.column < 45))
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/left/?token={state.Token}");
-                list = null;
 
                 return current;
             }
-            else if (right.isPillAvailable == true & (right.location.row > 0 & right.location.row < 29) & (right.location.column > 0 & right.location.column < 45))
+            else if (right!= null && right.isPillAvailable == true & (right.location.row > 0 & right.location.row < 29) & (right.location.column > 0 & right.location.column < 45))
             {
                 botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
-                list = null;
 
                 return current;
             }

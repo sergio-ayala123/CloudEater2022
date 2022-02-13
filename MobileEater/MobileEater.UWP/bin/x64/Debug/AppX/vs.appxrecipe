@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-13T17:15:33.140</Modified>
+      <Modified>2022-02-13T17:28:58.659</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\MobileEater.UWP.exe">
       <PackagePath>entrypoint\MobileEater.UWP.exe</PackagePath>
-      <Modified>2022-02-13T17:15:32.480</Modified>
+      <Modified>2022-02-13T17:28:56.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ventu\.nuget\packages\communitytoolkit.common\8.0.0-preview1\lib\netstandard2.0\CommunityToolkit.Common.dll">
       <PackagePath>CommunityToolkit.Common.dll</PackagePath>
@@ -96,7 +96,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\bin\Debug\netstandard2.0\MobileEater.dll">
       <PackagePath>MobileEater.dll</PackagePath>
-      <Modified>2022-02-13T17:18:15.745</Modified>
+      <Modified>2022-02-13T17:46:56.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ventu\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -283,11 +283,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-13T17:15:31.742</Modified>
+      <Modified>2022-02-13T17:28:55.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-13T17:15:31.743</Modified>
+      <Modified>2022-02-13T17:28:55.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -303,11 +303,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-13T16:44:03.295</Modified>
+      <Modified>2022-02-13T17:28:57.299</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater.UWP\bin\x64\Debug\Core\MobileEater.UWP.exe">
       <PackagePath>MobileEater.UWP.exe</PackagePath>
-      <Modified>2022-02-13T17:15:33.137</Modified>
+      <Modified>2022-02-13T17:28:58.655</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
