@@ -79,7 +79,7 @@ namespace EaterAPI2022.Controllers
 
                         //return current;
                     }
-                    else 
+                    else if((up == null || up.isPillAvailable == false) && (down == null || down.isPillAvailable == false) && (right == null || right.isPillAvailable == false))
                     {
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/left/?token={state.Token}");
                         list = null;
@@ -87,9 +87,6 @@ namespace EaterAPI2022.Controllers
 
 
                     list = null;
-
-                                        //else if ((up == null || up.isPillAvailable == false) && (down == null || down.isPillAvailable == false) && (right == null || right.isPillAvailable == false))
-
                     //Score = current.occupiedBy.score;
                     //&(right.location.row > 0 & right.location.row < 29) & (right.location.column > 0 & right.location.column < 45)
 
