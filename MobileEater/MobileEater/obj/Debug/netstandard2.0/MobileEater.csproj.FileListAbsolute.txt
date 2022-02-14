@@ -30,3 +30,4 @@ C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\ref\MobileEater.dll
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.pdb
 C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\Views\BotPage.xaml.g.cs
+C:\Users\ventu\Documents\GitHub\CloudEater2022\MobileEater\MobileEater\obj\Debug\netstandard2.0\MobileEater.csproj.AssemblyReference.cache
