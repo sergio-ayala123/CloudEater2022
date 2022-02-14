@@ -50,7 +50,14 @@ namespace EaterAPI2022.Controllers
                     Board left = list.FirstOrDefault(x => x.location.column == current.location.column - 1 && x.location.row == current.location.row);
                     Board right = list.FirstOrDefault(x => x.location.column == current.location.column + 1 && x.location.row == current.location.row);
 
-                    if (up != null && up.isPillAvailable == true)
+                    if (up == null && left == null && down == null)
+                    {
+                        botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
+                        list = null;
+
+                        //return current;
+                    }
+                    else if (up != null && up.isPillAvailable == true)
                     {
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/up/?token={state.Token}");
                         list = null;
@@ -67,13 +74,6 @@ namespace EaterAPI2022.Controllers
                     else if (left != null && left.isPillAvailable == true)
                     {
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/left/?token={state.Token}");
-                        list = null;
-
-                        //return current;
-                    }
-                    else if (up == null && left == null && down == null)
-                    {
-                        botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
                         list = null;
 
                         //return current;
