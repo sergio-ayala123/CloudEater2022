@@ -72,7 +72,7 @@ namespace EaterAPI2022.Controllers
                         //return current;
                     }
 
-                    else if ((up == null ||up.isPillAvailable == false) && (down == null || down.isPillAvailable == false) && (left == null ||left.isPillAvailable == false))
+                    else if ((up == null ||up.isPillAvailable == false) && (down == null || down.isPillAvailable == false) && (left == null ||left.isPillAvailable == false) && (current.location.row!= 0 || current.location.row!= 29) && (current.location.column!=44 || current.location.column !=44))
                     {
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
                         list = null;
