@@ -50,7 +50,7 @@ namespace EaterAPI2022.Controllers
                     Board left = list.FirstOrDefault(x => x.location.column == current.location.column - 1 && x.location.row == current.location.row);
                     Board right = list.FirstOrDefault(x => x.location.column == current.location.column + 1 && x.location.row == current.location.row);
 
-                    if (up.isPillAvailable == false & down.isPillAvailable == false & left.isPillAvailable == false)
+                    if (up.isPillAvailable == false && down.isPillAvailable == false && left.isPillAvailable == false)
                     {
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
                         list = null;
