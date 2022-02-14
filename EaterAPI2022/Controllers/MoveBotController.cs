@@ -40,8 +40,8 @@ namespace EaterAPI2022.Controllers
 
                 if (current == null)
                 {
-                    botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
-
+                    return current;
+                    break;
                 }
                 else
                 {
@@ -71,7 +71,7 @@ namespace EaterAPI2022.Controllers
 
                         //return current;
                     }
-                    else if (right != null && right.isPillAvailable == true)
+                    else if (up == null && left == null && down == null)
                     {
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
                         list = null;
