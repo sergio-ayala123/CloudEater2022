@@ -18,6 +18,9 @@ namespace EaterAPI2022.Controllers
             this.httpClient = httpClient;
         }
 
+
+
+
         [HttpGet(Name = "MoveBot")]
         public async Task<Board> MoveBot(string botName, string password)
         {
@@ -37,8 +40,8 @@ namespace EaterAPI2022.Controllers
 
                 if (current == null)
                 {
-                    return current;
-                    break;
+                    botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/left/?token={state.Token}");
+
                 }
                 else
                 {
