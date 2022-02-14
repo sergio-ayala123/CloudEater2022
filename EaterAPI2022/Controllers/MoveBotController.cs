@@ -40,7 +40,7 @@ namespace EaterAPI2022.Controllers
 
                 if (current == null)
                 {
-                    botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/left/?token={state.Token}");
+                    botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
 
                 }
                 else
