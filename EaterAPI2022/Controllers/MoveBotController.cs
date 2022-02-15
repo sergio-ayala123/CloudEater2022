@@ -24,12 +24,11 @@ namespace EaterAPI2022.Controllers
         [HttpGet(Name = "MoveBot")]
         public async Task<Board> MoveBot(string botName, string password)
         {
-
+            
             Board finalPosition  = new Board();
             for (int i = 0; i < 1350; i++)
             {
             MoveResult botmove = new MoveResult();
-                //var result = await gameService.MoveBot(BotName, "secretpassword");
 
 
                 positions = await httpClient.GetFromJsonAsync<IEnumerable<Board>>("https://hungrygame.azurewebsites.net/board");
@@ -72,7 +71,7 @@ namespace EaterAPI2022.Controllers
                         //return current;
                     }
 
-                    else if ((up == null ||up.isPillAvailable == false) && (down == null || down.isPillAvailable == false) && (left == null ||left.isPillAvailable == false))
+                    else if ((up == null ||up.isPillAvailable == false) && (down == null || down.isPillAvailable == false) && (left == null ||left.isPillAvailable == false) && (current.location.row != 0 && current.location.column !=44)&&(current.location.row != 29 && current.location.column !=44))
                     {
                         botmove = await httpClient.GetFromJsonAsync<MoveResult>($"https://hungrygame.azurewebsites.net/move/right/?token={state.Token}");
                         list = null;

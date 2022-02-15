@@ -47,9 +47,8 @@ namespace MobileEater.ViewModels
 
             Score = ("Final Score is: " + result.occupiedBy.score);
         }
-    }
-              
-    }
+    }   
+}
              
            
             
