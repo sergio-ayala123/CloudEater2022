@@ -22,6 +22,7 @@ namespace worker
             this.lifetime = lifetime;
             logger.LogInformation("In worker background service constructor");
         }
+
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             logger.LogInformation("In worker background service execute async");
@@ -45,7 +46,6 @@ namespace worker
             // If the completed tasks was the "app started" task, return true, otherwise false
             return completedTask == startedSource.Task;
         }
-
 
         private async Task enlistWithBoss()
         {

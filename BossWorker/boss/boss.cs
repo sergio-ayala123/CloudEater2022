@@ -1,3 +1,4 @@
+using boss;
 using Shared;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
+builder.Services.AddSingleton<BossLogic>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,7 +30,7 @@ app.MapPost("/enlist", async (EnlistRequest enlist, ILogger<Program> logger,Http
     logger.LogInformation($"Received {enlist}");
 });
 
-
+app.MapGet("/start", (string password, BossLogic bosslogic) => bosslogic.StartRunning(password));  
 app.Run();
 
 record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
