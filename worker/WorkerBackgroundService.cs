@@ -58,10 +58,11 @@ namespace worker
 
             var enlistRequest = new EnlistRequest(host, port);
             var httpClient = new HttpClient();
-            var response = await httpClient.PostAsJsonAsync($"{config["BOSS"]}/enlist", enlistRequest);
-            workerstate.Token = await response.Content.ReadAsStringAsync();
 
-            logger.LogInformation("Token is {token}", workerstate.Token);
+            var response = await httpClient.PostAsJsonAsync($"http://localhost:5162/enlist", enlistRequest);
+            workerstate.Token = await response.Content.ReadAsStringAsync();
+            workerstate.WorkerName = "http://" + host + ":" + port;
+            logger.LogInformation("Token is {token}, WorkerName is: {workername}", workerstate.Token, workerstate.WorkerName);
         }
     }
 }

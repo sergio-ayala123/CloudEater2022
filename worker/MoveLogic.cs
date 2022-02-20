@@ -21,7 +21,7 @@ namespace worker
         {
 
             var allCells = await httpClient.GetFromJsonAsync<List<Cell>>($"https://hungrygame.azurewebsites.net/board");
-            Cell current = allCells.FirstOrDefault(a => a.occupiedBy != null && a.occupiedBy.name == "localhost");
+            Cell current = allCells.FirstOrDefault(a => a.occupiedBy != null && a.occupiedBy.name == workerstate.WorkerName);
 
             int currRow = current.location.row;
             int currCol = current.location.column;
@@ -60,7 +60,7 @@ namespace worker
                 }
             }
 
-            await httpClient.GetAsync($"{config["BOSS"]}/done?workerName={current.occupiedBy.name}");
+            await httpClient.GetAsync($"{config["BOSS"]}/done?workerName={workerstate.WorkerName}");
         }
         
     }

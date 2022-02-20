@@ -9,6 +9,8 @@ namespace boss
         public IConfiguration config { get; }
         private readonly HttpClient httpClient;
 
+        public List<string> Workers { get; set; } = new();
+
         public BossLogic(ILogger<BossLogic> logger, IConfiguration config)
         {
             this.logger = logger;
@@ -32,9 +34,12 @@ namespace boss
         }
         internal async Task<string> Join(string workerName,string password)
         {
+
             logger.LogInformation("worker: {worker} wants to join", workerName);
             var server = config["SERVER"];
             string token = await httpClient.GetStringAsync($"{server}/join?playerName={workerName}");
+
+            Workers.Add(workerName);
             return token;
         }
     }
