@@ -36,14 +36,24 @@ app.MapPost("/enlist", async (EnlistRequest enlist, ILogger<Program> logger,Http
 app.MapGet("/start", async (string password, BossLogic bosslogic, HttpClient httpClient, IConfiguration config) =>
 {
     List<Cell> cells = await bosslogic.StartRunning(password);
-    var test = await httpClient.PostAsJsonAsync($"http://localhost:5289/move", cells[0].location);
+
+    Random rnd = new Random();
+    int randLocation = rnd.Next(0, 22500);
+
+    var startMove = await httpClient.PostAsJsonAsync($"http://localhost:5289/move", cells[randLocation].location);
+    //string result = await test.Content.ReadAsStringAsync();
+
+});
+
+app.MapGet("/done", async (string workerName, BossLogic bosslogic, HttpClient httpClient)=>
+{
+    List<Cell> cells = await bosslogic.StartRunning("secretpassword");
+
+    Random rnd = new Random();
+    int randLocation = rnd.Next(0, 22500);
+    var newMove = await httpClient.PostAsJsonAsync($"http://localhost:5289/move", cells[randLocation].location);
+
 });
 
 
-
 app.Run();
-
-record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

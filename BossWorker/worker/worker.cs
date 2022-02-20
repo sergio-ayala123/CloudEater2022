@@ -34,6 +34,7 @@ app.MapPost("/move", async ([FromBody] Location destination, ILogger<Program> lo
 {
     logger.LogInformation("Going to this destination: row: {row}, column {column}", destination.row, destination.column);
     await movelogic.Move(destination);
+    
 });
 
 

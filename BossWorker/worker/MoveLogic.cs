@@ -6,11 +6,13 @@ namespace worker
     {
         private readonly HttpClient httpClient;
         private readonly WorkerState workerstate;
+        private readonly IConfiguration config;
 
-        public MoveLogic(HttpClient httpClient, WorkerState workerstate)
+        public MoveLogic(HttpClient httpClient, WorkerState workerstate, IConfiguration config)
         {
             this.httpClient = httpClient;
             this.workerstate = workerstate;
+            this.config = config;
         }
 
 
@@ -58,7 +60,7 @@ namespace worker
                 }
             }
 
-
+            await httpClient.GetAsync($"{config["BOSS"]}/done?workerName={current.occupiedBy.name}");
         }
         
     }
