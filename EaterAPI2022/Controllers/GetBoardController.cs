@@ -18,9 +18,9 @@ namespace EaterAPI2022.Controllers
         }
 
         [HttpGet(Name ="GetBoard")]
-        public async Task<IEnumerable<Board>> GetBoard()
+        public async Task<IEnumerable<Cell>> GetBoard()
         {
-            return await httpClient.GetFromJsonAsync<IEnumerable<Board>>("https://hungrygame.azurewebsites.net/board");
+            return await httpClient.GetFromJsonAsync<IEnumerable<Cell>>("https://hungrygame.azurewebsites.net/board");
         }
     }
 }

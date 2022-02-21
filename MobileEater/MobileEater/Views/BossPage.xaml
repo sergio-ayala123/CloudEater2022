@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileEater.Views.BossPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding Workers}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+
+                            <Label Text="Worker Name" HorizontalOptions="Center"/>
+                            <Label Text="{Binding WorkerName}" HorizontalOptions="Center"/>
+                            
+                            <Label Text="Destination Row" HorizontalOptions="Center"/>
+                            <Label Text="{Binding Destination.row}" HorizontalOptions="Center"/>
+                            
+                            <Label Text="Destination Column" HorizontalOptions="Center"/>
+                            <Label Text="{Binding Destination.column}" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+            <Label Text="{Binding Name}"/>
+            <Button Text ="Start Workers" Command="{Binding StartCommand}"/>
+            <Button Text="Get Status" Command="{Binding StatusCommand}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

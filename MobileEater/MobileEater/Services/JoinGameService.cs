@@ -12,8 +12,10 @@ namespace MobileEater.Services
 
         Task<string> JoinGame(string playerName, string password);
         Task<string> Move(string direction, string password);
-        Task<Board> MoveBot(string botName, string password);
-        Task<IEnumerable<Board>> GetBoard();
+        Task<Cell> MoveBot(string botName, string password);
+        Task<List<Cell>> GetBoard();
+        Task<List<Cell>> Start();
+        Task<List<Status>> Status();
     }
     public class JoinGameService : IGameService
     {
@@ -33,15 +35,26 @@ namespace MobileEater.Services
         }
 
 
-        public Task<IEnumerable<Board>> GetBoard()
+        public Task<List<Cell>> GetBoard()
         {
-             return httpClient.GetFromJsonAsync<IEnumerable<Board>>($"{ServerUrl}/GetBoard");
+             return httpClient.GetFromJsonAsync<List<Cell>>($"{ServerUrl}/GetBoard");
            
         }
 
-        public Task<Board> MoveBot(string botName, string password)
+        public Task<Cell> MoveBot(string botName, string password)
         {
-            return httpClient.GetFromJsonAsync<Board>($"{ServerUrl}/MoveBot?botName={botName}&&password={password}");
+            return httpClient.GetFromJsonAsync<Cell>($"{ServerUrl}/MoveBot?botName={botName}&&password={password}");
+        }
+
+        public Task<List<Cell>> Start()
+        {
+            return httpClient.GetFromJsonAsync<List<Cell>>($"http://localhost:5162/start?password=secretpassword");
+        }
+
+        public Task<List<Status>> Status()
+        {
+            return httpClient.GetFromJsonAsync<List<Status>>($"http://localhost:5162/status");
+
         }
     }
     public class Player

@@ -24,4 +24,11 @@
         public int column { get; set; }
 
     }
+    public class Status 
+    { 
+        public string WorkerName { get; set; }
+        public string State { get; set; }
+        public Location Destination { get; set; }
+    }
+
 }

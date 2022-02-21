@@ -9,7 +9,7 @@ namespace boss
         public IConfiguration config { get; }
         private readonly HttpClient httpClient;
 
-        public List<string> Workers { get; set; } = new();
+        public List<Status> Workers { get; set; } = new();
 
         public BossLogic(ILogger<BossLogic> logger, IConfiguration config)
         {
@@ -34,12 +34,13 @@ namespace boss
         }
         internal async Task<string> Join(string workerName,string password)
         {
-
+            Status newWorker = new Status();
+            newWorker.WorkerName = workerName;
             logger.LogInformation("worker: {worker} wants to join", workerName);
             var server = config["SERVER"];
             string token = await httpClient.GetStringAsync($"{server}/join?playerName={workerName}");
 
-            Workers.Add(workerName);
+            Workers.Add(newWorker);
             return token;
         }
     }

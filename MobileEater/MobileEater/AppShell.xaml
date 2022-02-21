@@ -32,6 +32,8 @@
     <TabBar>
         <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:GamePage}" />
         <ShellContent Title="Bot" Icon="icon_about.png" Route="BotPagePage" ContentTemplate="{DataTemplate local:BotPage}" />
+        <ShellContent Title="Boss" Icon="icon_about.png" Route="BossPagePage" ContentTemplate="{DataTemplate local:BossPage}" />
+
     </TabBar>
    
 

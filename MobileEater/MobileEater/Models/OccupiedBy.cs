@@ -2,7 +2,7 @@
 
 namespace MobileEater.Models
 {
-    public class Player
+    public class OccupiedBy
     {
         public int id { get; set; }
         public string name { get; set; }

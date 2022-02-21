@@ -59,7 +59,8 @@ namespace worker
 
                 }
             }
-
+            workerstate.Destination = destination;
+ 
             await httpClient.GetAsync($"{config["BOSS"]}/done?workerName={workerstate.WorkerName}");
         }
         

@@ -9,8 +9,8 @@ namespace EaterAPI2022.Controllers
     {
         private readonly IStateService state;
         private readonly HttpClient httpClient;
-        public IEnumerable<Board> positions { get; set; }
-        public IList<Board> list { get; set; }
+        public IEnumerable<Cell> positions { get; set; }
+        public IList<Cell> list { get; set; }
 
         public MoveBotController(IStateService state, HttpClient httpClient)
         {
@@ -22,20 +22,20 @@ namespace EaterAPI2022.Controllers
 
 
         [HttpGet(Name = "MoveBot")]
-        public async Task<Board> MoveBot(string botName, string password)
+        public async Task<Cell> MoveBot(string botName, string password)
         {
             
-            Board finalPosition  = new Board();
+            Cell finalPosition  = new Cell();
             for (int i = 0; i < 1350; i++)
             {
             MoveResult botmove = new MoveResult();
 
 
-                positions = await httpClient.GetFromJsonAsync<IEnumerable<Board>>("https://hungrygame.azurewebsites.net/board");
+                positions = await httpClient.GetFromJsonAsync<IEnumerable<Cell>>("https://hungrygame.azurewebsites.net/board");
                 list = positions.ToList();
 
 
-                Board current = list.FirstOrDefault(x => x.occupiedBy != null && x.occupiedBy.name == botName);
+                Cell current = list.FirstOrDefault(x => x.occupiedBy != null && x.occupiedBy.name == botName);
 
                 if (current == null)
                 {
@@ -44,10 +44,10 @@ namespace EaterAPI2022.Controllers
                 }
                 else
                 {
-                    Board down = list.FirstOrDefault(x => x.location.column == current.location.column && x.location.row == current.location.row + 1);
-                    Board up = list.FirstOrDefault(x => x.location.column == current.location.column && x.location.row == current.location.row - 1);
-                    Board left = list.FirstOrDefault(x => x.location.column == current.location.column - 1 && x.location.row == current.location.row);
-                    Board right = list.FirstOrDefault(x => x.location.column == current.location.column + 1 && x.location.row == current.location.row);
+                    Cell down = list.FirstOrDefault(x => x.location.column == current.location.column && x.location.row == current.location.row + 1);
+                    Cell up = list.FirstOrDefault(x => x.location.column == current.location.column && x.location.row == current.location.row - 1);
+                    Cell left = list.FirstOrDefault(x => x.location.column == current.location.column - 1 && x.location.row == current.location.row);
+                    Cell right = list.FirstOrDefault(x => x.location.column == current.location.column + 1 && x.location.row == current.location.row);
 
                     if (up != null && up.isPillAvailable == true)
                     {
