@@ -30,5 +30,9 @@
         public string State { get; set; }
         public Location Destination { get; set; }
     }
-
+    public class SenderHostInfo
+    {
+        public string senderHost { get; set;}
+        public string Token { get; set; }
+    }
 }

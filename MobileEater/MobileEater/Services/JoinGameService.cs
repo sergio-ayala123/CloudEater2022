@@ -48,12 +48,12 @@ namespace MobileEater.Services
 
         public Task<List<Cell>> Start()
         {
-            return httpClient.GetFromJsonAsync<List<Cell>>($"http://localhost:5162/start?password=secretpassword");
+            return httpClient.GetFromJsonAsync<List<Cell>>($"http://localhost:5000/start?password=secretpassword");
         }
 
         public Task<List<Status>> Status()
         {
-            return httpClient.GetFromJsonAsync<List<Status>>($"http://localhost:5162/status");
+            return httpClient.GetFromJsonAsync<List<Status>>($"http://localhost:5000/status");
 
         }
     }

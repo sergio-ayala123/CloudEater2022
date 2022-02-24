@@ -26,11 +26,19 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapPost("/enlist", async (EnlistRequest enlist, ILogger<Program> logger,HttpClient httpClient, BossLogic bosslogic) =>
+app.MapPost("/enlist", async (EnlistRequest enlist, ILogger<Program> logger,HttpClient httpClient, BossLogic bosslogic, HttpRequest request) =>
 {
+    var sender = request.HttpContext.Connection.RemoteIpAddress.ToString().Split(':').Last();
+    var senderHost = $"http://{sender}";
+    SenderHostInfo senderInfo = new SenderHostInfo();
+
+
     logger.LogInformation($"Received {enlist}");
-    var token = await bosslogic.Join(("http://"+enlist.host+":"+enlist.port), "secretpassword");
-    return token;
+    var token = await bosslogic.Join(senderHost, "secretpassword");
+    senderInfo.senderHost = senderHost;
+    senderInfo.Token = token;
+
+    return senderInfo;
 });
 
 app.MapGet("/start", async (string password, BossLogic bosslogic, HttpClient httpClient, IConfiguration config) =>
@@ -47,7 +55,7 @@ app.MapGet("/start", async (string password, BossLogic bosslogic, HttpClient htt
     return cells;
 });
 
-app.MapGet("/status", async (BossLogic bosslogic, HttpClient httpClient) =>
+app.MapGet("/status",(BossLogic bosslogic, HttpClient httpClient) =>
 {
     return bosslogic.Workers;
 });
@@ -64,10 +72,6 @@ app.MapGet("/done", async (string workerName, BossLogic bosslogic, HttpClient ht
 
     var newMove = await httpClient.PostAsJsonAsync($"{workerName}/move", cells[randLocation].location);
 
-
-    return currentWorker;
-
-    
 });
 
 

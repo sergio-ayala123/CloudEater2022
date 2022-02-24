@@ -49,19 +49,23 @@ namespace worker
 
         private async Task enlistWithBoss()
         {
-            var addressFeatures = server.Features.Get<IServerAddressesFeature>();
+           // var addressFeatures = server.Features.Get<IServerAddressesFeature>();
 
-            var httpAddress = addressFeatures.Addresses.First(a => a.Contains("http://"));
-            var uri = new Uri(httpAddress);
-            var host = uri.Host;
-            var port = uri.Port;
+            //var httpAddress = addressFeatures.Addresses.First(a => a.Contains("http://"));
+            //var uri = new Uri(httpAddress);
+            //var host = uri.Host;
+            //var port = uri.Port;
 
-            var enlistRequest = new EnlistRequest(host, port);
+            var enlistRequest = new EnlistRequest("this would have been my ip address", 1234);
             var httpClient = new HttpClient();
+           
 
-            var response = await httpClient.PostAsJsonAsync($"http://localhost:5162/enlist", enlistRequest);
-            workerstate.Token = await response.Content.ReadAsStringAsync();
-            workerstate.WorkerName = "http://" + host + ":" + port;
+            var response = await httpClient.PostAsJsonAsync($"http://boss/enlist", enlistRequest);
+            var test = await response.Content.ReadFromJsonAsync<SenderHostInfo>();
+            workerstate.Token = test.Token;
+            workerstate.WorkerName = test.senderHost;
+           
+
             logger.LogInformation("Token is {token}, WorkerName is: {workername}", workerstate.Token, workerstate.WorkerName);
         }
     }

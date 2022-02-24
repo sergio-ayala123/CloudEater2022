@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Shared;
 using worker;
+using System.Threading;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,8 +33,11 @@ var summaries = new[]
 
 app.MapPost("/move", async ([FromBody] Location destination, ILogger<Program> logger, MoveLogic movelogic) =>
 {
+    ThreadStart t1 = new ThreadStart(async () => await movelogic.Move(destination));
+    Thread threadMove = new Thread(t1);
+    threadMove.Start();
     logger.LogInformation("Going to this destination: row: {row}, column {column}", destination.row, destination.column);
-    await movelogic.Move(destination);
+    //await movelogic.Move(destination);
     
 });
 

@@ -25,12 +25,12 @@ namespace boss
             if(password != config["PASSWORD"])
             {
                 logger.LogWarning("Wrong Password");
-                return null;
+                //return null;
             }
             var server = config["SERVER"];
 
-            var allCells = await httpClient.GetFromJsonAsync<List<Cell>>($"{server}/board");
-            return allCells;
+            return await httpClient.GetFromJsonAsync<List<Cell>>($"{server}/board");
+
         }
         internal async Task<string> Join(string workerName,string password)
         {
