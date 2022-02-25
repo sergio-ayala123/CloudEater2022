@@ -40,7 +40,27 @@
       "ProjectGuid": "90f6ca17-c04a-4567-ae0b-b162e529bffb",
       "DisplayName": "Shared",
       "ColorIndex": 6
+    },
+    "5ef2b99b-cecc-403e-8586-d0db257fc735": {
+      "ProjectGuid": "5ef2b99b-cecc-403e-8586-d0db257fc735",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 7
+    },
+    "a90975ca-25c6-418f-be89-d696e85763df": {
+      "ProjectGuid": "a90975ca-25c6-418f-be89-d696e85763df",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 8
+    },
+    "baa9c524-77fc-42f8-9504-2a1117625d85": {
+      "ProjectGuid": "baa9c524-77fc-42f8-9504-2a1117625d85",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 9
+    },
+    "e9935156-aa58-43b9-82bf-f4a729a84ced": {
+      "ProjectGuid": "e9935156-aa58-43b9-82bf-f4a729a84ced",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 11
 }

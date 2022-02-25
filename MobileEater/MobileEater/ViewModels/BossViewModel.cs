@@ -26,34 +26,25 @@ namespace MobileEater.ViewModels
 
 
         [ObservableProperty]
-        public string name;
+        public string state;
+
 
         [ICommand]
         public async Task Start()
         {
-            await gameService.Start();
+            State = await gameService.Start();
         }
+
 
         [ICommand]
         public async Task Status()
         {
             Workers.Clear();
             var workers = await gameService.Status();
-            //var board = await gameService.GetBoard();
-
             foreach(var worker in workers)
-            {
-                
-                //Status currentWorker = board.FirstOrDefault(a => a.occupiedBy != null && a.occupiedBy.name == worker.WorkerName);
-                Workers.Add(worker);
-                
+            {           
+                Workers.Add(worker);           
             }
-
-           //Workers.Clear();
         }
-
-
-
-
     }
 }

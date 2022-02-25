@@ -33,7 +33,7 @@ app.MapPost("/enlist", async (EnlistRequest enlist, ILogger<Program> logger,Http
     SenderHostInfo senderInfo = new SenderHostInfo();
 
 
-    logger.LogInformation($"Received {enlist}");
+    logger.LogInformation($"Received {senderHost}");
     var token = await bosslogic.Join(senderHost, "secretpassword");
     senderInfo.senderHost = senderHost;
     senderInfo.Token = token;
@@ -43,6 +43,9 @@ app.MapPost("/enlist", async (EnlistRequest enlist, ILogger<Program> logger,Http
 
 app.MapGet("/start", async (string password, BossLogic bosslogic, HttpClient httpClient, IConfiguration config) =>
 {
+    var server = config["SERVER"];
+    var state = await httpClient.GetStringAsync($"{server}/state");
+
     List<Cell> cells = await bosslogic.StartRunning(password);
 
     Random rnd = new Random();
@@ -52,26 +55,19 @@ app.MapGet("/start", async (string password, BossLogic bosslogic, HttpClient htt
         int randLocation = rnd.Next(0, 22500);
         await httpClient.PostAsJsonAsync($"{item.WorkerName}/move", cells[randLocation].location);
     }
-    return cells;
+    return state;
 });
+
 
 app.MapGet("/status",(BossLogic bosslogic, HttpClient httpClient) =>
 {
     return bosslogic.Workers;
 });
 
+
 app.MapGet("/done", async (string workerName, BossLogic bosslogic, HttpClient httpClient)=>
 {
-    List<Cell> cells = await bosslogic.StartRunning("secretpassword");
-    
-    Random rnd = new Random();
-    int randLocation = rnd.Next(0, 22500);
-
-    var currentWorker = bosslogic.Workers.FirstOrDefault(a => a.WorkerName == workerName);
-    currentWorker.Destination = cells[randLocation].location;
-
-    var newMove = await httpClient.PostAsJsonAsync($"{workerName}/move", cells[randLocation].location);
-
+    await bosslogic.Done(workerName);
 });
 
 

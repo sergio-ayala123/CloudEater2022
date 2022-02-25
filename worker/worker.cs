@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
 builder.Services.AddHostedService<WorkerBackgroundService>();
 builder.Services.AddSingleton<WorkerState>();
-builder.Services.AddSingleton<MoveLogic>();
+builder.Services.AddSingleton<WorkerMoveLogic>();
 
 var app = builder.Build();
 
@@ -31,7 +31,7 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapPost("/move", async ([FromBody] Location destination, ILogger<Program> logger, MoveLogic movelogic) =>
+app.MapPost("/move", async ([FromBody] Location destination, ILogger<Program> logger, WorkerMoveLogic movelogic) =>
 {
     ThreadStart t1 = new ThreadStart(async () => await movelogic.Move(destination));
     Thread threadMove = new Thread(t1);

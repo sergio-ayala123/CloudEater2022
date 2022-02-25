@@ -2,13 +2,13 @@
 using System.Linq;
 namespace worker
 {
-    public class MoveLogic
+    public class WorkerMoveLogic
     {
         private readonly HttpClient httpClient;
         private readonly WorkerState workerstate;
         private readonly IConfiguration config;
 
-        public MoveLogic(HttpClient httpClient, WorkerState workerstate, IConfiguration config)
+        public WorkerMoveLogic(HttpClient httpClient, WorkerState workerstate, IConfiguration config)
         {
             this.httpClient = httpClient;
             this.workerstate = workerstate;

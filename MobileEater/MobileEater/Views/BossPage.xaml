@@ -4,25 +4,45 @@
              x:Class="MobileEater.Views.BossPage">
     <ContentPage.Content>
         <StackLayout>
-            <CollectionView ItemsSource="{Binding Workers}">
+
+            <Label Text="Current State" HorizontalOptions="Center" />
+            <Label Text="{Binding State}" FontSize="Large" HorizontalOptions="Center"/>
+            <CollectionView ItemsSource="{Binding Workers}" Margin="4,0" HorizontalOptions="FillAndExpand">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout>
+                        <StackLayout BackgroundColor="AliceBlue" HorizontalOptions="Center">
+                            <Grid>
+                                
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
 
-                            <Label Text="Worker Name" HorizontalOptions="Center"/>
-                            <Label Text="{Binding WorkerName}" HorizontalOptions="Center"/>
-                            
-                            <Label Text="Destination Row" HorizontalOptions="Center"/>
-                            <Label Text="{Binding Destination.row}" HorizontalOptions="Center"/>
-                            
-                            <Label Text="Destination Column" HorizontalOptions="Center"/>
-                            <Label Text="{Binding Destination.column}" HorizontalOptions="Center"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="150"/>
+                            </Grid.ColumnDefinitions>
+                                
+                            <Label Text="Worker Name" Grid.Column="0" Grid.Row="0" />
+                                <Label Text="{Binding WorkerName}" Grid.Column="0" Grid.Row="1"/>
+                                <Label Text="Worker Score: " Grid.Column="1" Grid.Row="0"/>
+                                <Label Text="{Binding Score}" Grid.Column="1" Grid.Row="1"/>
+
+                                <Label Text="Destination Row" Grid.Column="2" Grid.Row="0"/>
+                                <Label Text="{Binding Destination.row}" Grid.Column="2" Grid.Row="1"/>
+
+                                <Label Text="Destination Column" Grid.Column="3" Grid.Row="0"/>
+                                <Label Text="{Binding Destination.column}" Grid.Column="3" Grid.Row="1"/>
+                                <Label Text="" Grid.Row="2"/>
+                            </Grid>
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
             
-            <Label Text="{Binding Name}"/>
             <Button Text ="Start Workers" Command="{Binding StartCommand}"/>
             <Button Text="Get Status" Command="{Binding StatusCommand}"/>
 

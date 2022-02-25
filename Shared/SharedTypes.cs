@@ -27,7 +27,7 @@
     public class Status 
     { 
         public string WorkerName { get; set; }
-        public string State { get; set; }
+        public int Score { get; set; }
         public Location Destination { get; set; }
     }
     public class SenderHostInfo
