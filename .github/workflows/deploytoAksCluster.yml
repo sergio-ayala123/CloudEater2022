@@ -1,0 +1,63 @@
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - uses: actions/checkout@master
+    
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Create ACR
+      id: create-acr
+      run: |
+        az acr create -n EaterAPI -g EaterAPI9e6c-rg --location "West US 3" --sku Standard --admin-enabled
+        echo "::set-output name=acr_username::`az acr credential show -n EaterAPI --query username | xargs`"
+        echo "::set-output name=acr_password::`az acr credential show -n EaterAPI --query passwords[0].value | xargs`"
+        echo "::add-mask::`az acr credential show -n EaterAPI --query passwords[0].value | xargs`"
+
+    - uses: azure/docker-login@v1
+      with:
+        login-server: eaterapi.azurecr.io
+        username: ${{ steps.create-acr.outputs.acr_username }}
+        password: ${{ steps.create-acr.outputs.acr_password }}
+
+    - name: Build and push image to ACR
+      id: build-image
+      run: |
+        docker build "$GITHUB_WORKSPACE/EaterAPI2022" -f  "EaterAPI2022/Dockerfile" -t eaterapi.azurecr.io/k8stest:${{ github.sha }} --label dockerfile-path=EaterAPI2022/Dockerfile
+        docker push eaterapi.azurecr.io/k8stest:${{ github.sha }}
+    
+    - uses: azure/k8s-set-context@v1
+      id: login
+      with:
+         kubeconfig: ${{ secrets.aks_k8stest_kubeConfig }}
+    
+    - name: Create namespace
+      run: |
+        namespacePresent=`kubectl get namespace | grep k8stest9aa5 | wc -l`
+        if [ $namespacePresent -eq 0 ]
+        then
+            echo `kubectl create namespace k8stest9aa5`
+        fi
+
+    - uses: azure/k8s-create-secret@v1
+      with:
+        namespace: k8stest9aa5
+        container-registry-url: eaterapi.azurecr.io
+        container-registry-username: ${{ steps.create-acr.outputs.acr_username }}
+        container-registry-password: ${{ steps.create-acr.outputs.acr_password }}
+        secret-name: k8stestdockerauth
+       
+    - uses: azure/k8s-deploy@v1.2
+      with:
+        namespace: k8stest9aa5
+        manifests: |
+          manifests/deployment.yml
+          manifests/service.yml
+        images: |
+          eaterapi.azurecr.io/k8stest:${{ github.sha }}
+        imagepullsecrets: |
+          k8stestdockerauth   
