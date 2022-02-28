@@ -26,7 +26,7 @@ namespace EaterAPI2022.Controllers
         {
             
             Cell finalPosition  = new Cell();
-            for (int i = 0; i < 1350; i++)
+            for (int i = 0; i < 10100; i++)
             {
             MoveResult botmove = new MoveResult();
 

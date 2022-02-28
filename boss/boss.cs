@@ -52,7 +52,7 @@ app.MapGet("/start", async (string password, BossLogic bosslogic, HttpClient htt
 
     foreach(var item in bosslogic.Workers)
     {
-        int randLocation = rnd.Next(0, 22500);
+        int randLocation = rnd.Next(0, 10100);
         await httpClient.PostAsJsonAsync($"{item.WorkerName}/move", cells[randLocation].location);
     }
     return state;
@@ -69,7 +69,5 @@ app.MapGet("/done", async (string workerName, BossLogic bosslogic, HttpClient ht
 {
     await bosslogic.Done(workerName);
 });
-
-
 
 app.Run();

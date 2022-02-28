@@ -49,7 +49,7 @@ namespace boss
             List<Cell> cells = await StartRunning("secretpassword");
 
             Random rnd = new Random();
-            int randLocation = rnd.Next(0, 22500);
+            int randLocation = rnd.Next(0, 10100);
             var currentWorkerScore = cells.FirstOrDefault(b => b.occupiedBy != null && b.occupiedBy.name == workerName);
 
             var currentWorker = Workers.FirstOrDefault(a => a.WorkerName == workerName);
@@ -59,9 +59,5 @@ namespace boss
             logger.LogInformation("worker: {worker} has arrived at destination", workerName);
             var newMove = await httpClient.PostAsJsonAsync($"{workerName}/move", cells[randLocation].location);
         }
-    }
-    
-
-
-    
+    }   
 }
